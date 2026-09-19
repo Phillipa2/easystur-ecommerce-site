@@ -1,0 +1,20 @@
+.es-gallerygrid { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 16px; 
+}
+@media (max-width: 760px) { 
+    .es-gallerygrid { 
+        grid-template-columns: 1fr 1fr; 
+    } 
+}
+.es-gitem {
+  aspect-ratio: 4/3;
+  background: repeating-linear-gradient(135deg, #e9e5da, #e9e5da 12px, #e0dccf 12px, #e0dccf 24px);
+  display: flex;
+  align-items: flex-end;
+  padding: 10px;
+  font-size: 12px;
+  color: var(--navy);
+  border: 1px solid var(--line);
+}

@@ -1,0 +1,17 @@
+.es-contactgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+@media (max-width: 860px) { .es-contactgrid { grid-template-columns: 1fr; } }
+
+.es-field { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
+.es-field label { font-size: 13px; font-weight: 600; color: var(--navy); }
+.es-field input,
+.es-field textarea,
+.es-field select {
+  border: 1px solid var(--line);
+  padding: 11px 12px;
+  font-size: 14px;
+  background: #fff;
+  font-family: inherit;
+}
+
+.sent-note { margin-top: 14px; color: var(--teal); font-size: 14px; font-weight: 600; }
+.es-infoblock { border-left: 3px solid var(--marigold); padding-left: 18px; margin-bottom: 22px; }

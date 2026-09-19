@@ -10,6 +10,9 @@ import Contact from "./pages/contact.jsx";
 export default function App() {
   return (
     <div className="es-root">
+       {/* Navbar and Footer sit OUTSIDE <Routes>, so they render on
+          every page. Only the middle section swaps out depending
+          on the current URL. */}
       <Navbar />
 
       <Routes>
